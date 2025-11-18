@@ -185,4 +185,4 @@ def update_images(selected_categories, selected_subcategories, selected_location
 
 # ---------------- Run app ----------------
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
