@@ -95,7 +95,12 @@ app.layout = html.Div([
                 html.Div([
                     html.H2("Dashboards", style={"margin-bottom": "20px"}),
                     html.Hr(),
-                    html.Div(id="image-container")
+                    dcc.Loading(
+                    id="loading-images",
+                    type="circle",  # you can also use "dot" or "default"
+                    color="#444",   # spinner color (dark gray to match your theme)
+                    children=html.Div(id="image-container")
+                )
                 ], style={
                     "padding": "30px",
                     "margin": "20px",
